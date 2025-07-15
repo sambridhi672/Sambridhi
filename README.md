@@ -1,2 +1,0 @@
-# Sambridhi
-About School
