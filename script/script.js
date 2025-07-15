@@ -1,4 +1,3 @@
 function change(){
-  document.getElementById('change').innerHTML="Visit Now";
-   
+  alert("Thank's for Applying.");
 }
