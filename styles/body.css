@@ -11,13 +11,11 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.contain {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Deep Blue Color Palette */
 :root {
     --primary-blue: #1e3a8a;
     --secondary-blue: #3b82f6;
@@ -29,190 +27,11 @@ body {
     --gray: #64748b;
     --dark-gray: #334155;
 }
-
-/* Navigation */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(30, 58, 138, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    padding: 1rem 0;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.nav-logo i {
-    margin-right: 10px;
-    font-size: 2rem;
-    color: var(--light-blue);
-    height: 30px;
-}
-
-.nav-logo img {
-    margin-top: -15px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-link {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-.nav-link:hover {
-    color: var(--light-blue);
-}
-
-
-
-
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    background:
-        linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(30, 64, 175, 0.45) 100%),
-        url('images/school.jpg') center center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.hero-content {
-    flex: 1;
-    max-width: 600px;
-    color:  #ffffff;
-    /* z-index: 2; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    /* line-height: 1.2; */
-}
-
-.hero-subtitle {
-    font-size: 19px;
-    margin-bottom: 32px;
-    /* opacity: 1; */
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 16px;
-}
-
-.btn {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    /* display: inline-block; */
-}
-
-.btn-primary {
-    background: #60a5fa;
-    color:  #ffffff;
-}   
-
-.btn-primary:hover {
-    background: #0073ff;
-}
-
-.btn-secondary {
-    background: transparent;
-    color:  #ffffff;
-    border: 2px solid  #ffffff;
-}
-
-.btn-secondary:hover {
-    background:  #ffffff;
-    color: blue;
-}
-
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.floating-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 2rem;
-    text-align: center;
-    color:  #ffffff;
-}
-
-.floating-card i {
-    font-size: 3rem;
-    color: var(--light-blue);
-    margin-bottom: 1rem;
-}
-
-.floating-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Section Styles */
-section {
-    /* padding: 80px 0; */
-    
-}
-
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: blue;
     margin-bottom: 3rem;
     position: relative;
 }
@@ -228,8 +47,6 @@ section {
     background: linear-gradient(90deg, var(--light-blue), var(--secondary-blue));
     border-radius: 2px;
 }
-
-/* About Section */
 .about {
     background: var(--light-gray);
 }
@@ -309,14 +126,11 @@ section {
     color: var(--primary-blue);
     font-weight: 600;
 }
-
-/* Academics Section */
 .academics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
-
 .academic-card {
     background: var(--white);
     padding: 2.5rem;
@@ -326,7 +140,6 @@ section {
     position: relative;
     overflow: hidden;
 }
-
 .academic-card::before {
     content: '';
     position: absolute;
@@ -336,12 +149,10 @@ section {
     height: 4px;
     background: linear-gradient(90deg, var(--light-blue), var(--secondary-blue));
 }
-
 .academic-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
-
 .card-icon {
     width: 80px;
     height: 80px;
@@ -352,18 +163,15 @@ section {
     justify-content: center;
     margin-bottom: 1.5rem;
 }
-
 .card-icon i {
     font-size: 2rem;
     color: var(--white);
 }
-
 .academic-card h3 {
     font-size: 1.5rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
 }
-
 .academic-card p {
     color: var(--gray);
     margin-bottom: 1.5rem;
@@ -613,7 +421,7 @@ section {
 /* Footer */
 .footer {
     background: var(--primary-blue);
-    color: var(--white);
+    color: white;
     padding: 3rem 0 1rem;
 }
 
@@ -626,7 +434,7 @@ section {
 
 .footer-section h3 {
     margin-bottom: 1rem;
-    color: var(--light-blue);
+    color: light-blue;
 }
 
 .footer-section p {
@@ -652,7 +460,7 @@ section {
 
 .footer-section ul li a:hover {
     opacity: 1;
-    color: var(--light-blue);
+    color: light-blue;
 }
 
 .social-links {
@@ -668,13 +476,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: white;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    background: var(--light-blue);
+    background: light-blue;
     transform: translateY(-2px);
 }
 
@@ -696,8 +504,8 @@ section {
     height: 40px;
     border: none;
     border-radius: 50%;
-    background: var(--light-blue);
-    color: var(--white);
+    background:lightblue;
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
