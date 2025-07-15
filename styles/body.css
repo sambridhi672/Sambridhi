@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: black;
+    color: gray;
     overflow-x: hidden;
 }
 
@@ -50,7 +50,6 @@ body {
 .about {
     background: var(--light-gray);
 }
-
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,12 +76,14 @@ body {
     padding: 1.5rem;
     background: var(--white);
     border-radius: 15px;
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.63);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
     transition: transform 0.3s ease;
+    background-color: rgb(200, 217, 243);
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
+    background-color:  rgb(179, 204, 241);
 }
 
 .stat-item h3 {
@@ -107,13 +108,15 @@ body {
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
     transition: all 0.3s ease;
+    background-color: #ddd7f0;
 }
 
 .grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
+    background-color: #cabff3;
 }
 
 .grid-item i {
@@ -135,10 +138,11 @@ body {
     background: var(--white);
     padding: 2.5rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    background-color: #c7c9e6;
 }
 .academic-card::before {
     content: '';
@@ -151,7 +155,8 @@ body {
 }
 .academic-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
+    background-color: #a7aada;
 }
 .card-icon {
     width: 80px;
@@ -262,7 +267,7 @@ body {
     color: var(--primary-blue);
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
 }
 
 .slider-btn:hover {
@@ -281,14 +286,14 @@ body {
     background: var(--white);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
     transition: all 0.3s ease;
     display: flex;
 }
 
 .event-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
 }
 
 .event-date {
@@ -363,7 +368,7 @@ body {
     padding: 1.5rem;
     background: var(--white);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
 }
 
 .contact-item i {
@@ -375,6 +380,7 @@ body {
 .contact-item h3 {
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
+
 }
 
 .contact-item p {
@@ -386,7 +392,9 @@ body {
     background: var(--white);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.63);
+    background-color: #f3c5c5;
+    
 }
 
 .form-group {
@@ -403,13 +411,11 @@ body {
     transition: border-color 0.3s ease;
     font-family: inherit;
 }
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--secondary-blue);
 }
-
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
@@ -478,7 +484,7 @@ body {
 }
 
 .social-links a:hover {
-    background: light-blue;
+    background: lightblue;
     transform: translateY(-2px);
 }
 
