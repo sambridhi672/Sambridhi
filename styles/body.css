@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: black;
     overflow-x: hidden;
 }
 
@@ -197,7 +197,6 @@ body {
     font-weight: bold;
 }
 
-/* Facilities Section */
 .facilities {
     background: var(--light-gray);
 }
@@ -272,7 +271,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Events Section */
 .events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -342,7 +340,6 @@ body {
     margin-right: 0.5rem;
 }
 
-/* Contact Section */
 .contact {
     background: var(--light-gray);
 }
@@ -418,7 +415,6 @@ body {
     min-height: 120px;
 }
 
-/* Footer */
 .footer {
     background: var(--primary-blue);
     color: white;
